@@ -1,0 +1,38 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:local": "env-cmd -e local parcel --host 127.0.0.1 public/index.html",
+    "build:local": "env-cmd -e development parcel build public/index.html --public-url ./ --dist-dir ./local-server-dist",
+    "format": "prettier –write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.19.1",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "^5.10.5",
+    "@parcel/babel-preset-env": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "babel": "^6.23.0",
+    "bootstrap": "^5.2.1",
+    "parcel": "^2.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.54.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "process": "^0.11.10"
+  }
+}
