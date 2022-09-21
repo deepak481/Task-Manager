@@ -12,9 +12,10 @@ const getTasks = () => {
   list = JSON.parse(list);
   let tasks = [];
 
-  Object.keys(list).map((task) => {
-    return tasks.push(list[task]);
-  });
+  list &&
+    Object.keys(list).map((task) => {
+      return tasks.push(list[task]);
+    });
 
   tasks.sort(function (a, b) {
     return Date.parse(b.createdAt) - Date.parse(a.createdAt) > 0
