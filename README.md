@@ -1,4 +1,4 @@
-# todo_
+# task_manager_
 
 An offline TODO App for the browser using React JS.
 
