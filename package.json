@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:local": "env-cmd -e local parcel --host 127.0.0.1 public/index.html",
-    "build:local": "env-cmd -e development parcel build public/index.html --public-url ./ --dist-dir ./local-server-dist",
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
     "format": "prettier –write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
