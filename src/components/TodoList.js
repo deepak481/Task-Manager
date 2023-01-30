@@ -138,6 +138,7 @@ function TodoList() {
                   style={{
                     display: totalTasks[task].status ? "" : "none",
                   }}
+                  key={`task-${task}`}
                 >
                   <Card
                     key={`task-${task}`}
@@ -160,6 +161,7 @@ function TodoList() {
                     display: !totalTasks[task].status ? "" : "none",
                     backgroundColor: "",
                   }}
+                  key={`task-${task}`}
                 >
                   <Card
                     key={`task-${task}`}
